@@ -1,8 +1,8 @@
 # a hundreds commits
-Y=2019
+Y=2018
 mkdir $Y
 cd $Y
-for M in {1..12}
+for M in {10..12}
 do
   mkdir $M
   cd $M
@@ -26,6 +26,6 @@ do
   cd ../
 done
 git push origin master
-git rm -rf 20**
+git rm -rf 2019
 git commit -am "cleanup"
 git push origin master
