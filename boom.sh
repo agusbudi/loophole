@@ -26,6 +26,6 @@ do
   cd ../
 done
 git push origin master
-git rm -rf 2019
-git commit -am "cleanup"
-git push origin master
+#git rm -rf 2019
+#git commit -am "cleanup"
+#git push origin master
