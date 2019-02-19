@@ -2,7 +2,7 @@
 Y=2018
 mkdir $Y
 cd $Y
-for M in {10..12}
+for M in {1..4}
 do
   mkdir $M
   cd $M
@@ -13,7 +13,7 @@ do
     cd $D
     Rep=$((RANDOM % 16 ))
 #    for i in {01.."$Rep"}
-    for (( i=1; i<=$Rep; i++ ))
+    for (( i=2; i<=$Rep; i++ ))
     do
       echo "$i on $M/$D/$Y" > commit.md
       export GIT_COMMITTER_DATE="$Y-$M-$D 12:$i:00"
@@ -26,6 +26,6 @@ do
   cd ../
 done
 git push origin master
-git rm -rf 2019
-git commit -am "cleanup"
-git push origin master
+#git rm -rf 2018
+#git commit -am "cleanup"
+#git push origin master
